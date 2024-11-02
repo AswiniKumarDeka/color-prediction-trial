@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Prediction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wallet">
+        <span>Wallet Balance: <span id="wallet-balance">500 Rs</span></span>
+    </div>
+    <div id="color-box"></div>
+    <div id="time-left">10</div>
+    <div id="result"></div>
+    <div id="bet-section" style="display: none;">
+        <input type="number" id="bet-amount" min="1" max="500" placeholder="Enter Bet Amount" />
+        <button id="bet-button">Place Bet</button>
+    </div>
+    <div class="color-options">
+        <button class="color-option" style="background-color: #FF0000;">Red</button>
+        <button class="color-option" style="background-color: #0000FF;">Blue</button>
+        <button class="color-option" style="background-color: #00FF00;">Green</button>
+        <button class="color-option" style="background-color: #FFFF00;">Yellow</button>
+    </div>
+
+    <!-- Bet Displays -->
+    <div id="bet-displays">
+        <div id="red-bet">Bet on Red: 0 Rs</div>
+        <div id="blue-bet">Bet on Blue: 0 Rs</div>
+        <div id="green-bet">Bet on Green: 0 Rs</div>
+        <div id="yellow-bet">Bet on Yellow: 0 Rs</div>
+    </div>
+
+    <!-- Countdown sound -->
+    <audio id="countdown-sound" src="tick.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
